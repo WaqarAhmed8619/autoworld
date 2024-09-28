@@ -1,0 +1,273 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+} 
+
+header {
+    background: #0056b3;
+    color: #fff;
+    padding: 10px 150px;
+    /* border-radius: 200px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 120px;
+    mix-blend-mode: color-burn;
+    
+    /* Adjust based on your logo size */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+nav ul li a:hover {
+    background: #555;
+    border-radius: 5px;
+}
+
+/* .check{
+    display: flex;
+    justify-content: center;
+} */
+.check{
+    margin: 0;
+    background-size: cover;
+    margin-left: 0;
+    /* box-shadow: 20px 20px 10px gray; */
+    animation: slider 10s linear infinite;
+}
+
+@keyframes slider{
+    0%{
+        background-image: url(123.gif);
+    }
+    33%{
+        background-image: url(https://hips.hearstapps.com/hmg-prod/images/rear-wheel-drive-style-proportions-1605543407.gif);
+    }
+    66%{
+        background-image: url(https://www.car-revs-daily.com/wp-content/uploads/2015/02/avalon.gif);
+    }
+    100%{
+        background-image: url(https://static.wixstatic.com/media/8f2779_e9a66e5e7c8849a4af816d25556f76d8~mv2.gif);
+    }
+}
+.details {
+    display: none; /* Hidden by default */
+    margin-top: 10px;
+}
+
+.warranty-info {
+    padding: 20px;
+    background: #fff;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.warranty-scheme {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: #f9f9f9;
+}
+
+.brand-image {
+    width: 100%; 
+    max-width: 150px;
+    display: block; 
+    margin: 0 auto 10px; 
+    aspect-ratio: 5/4.5;
+    mix-blend-mode: darken;
+    
+}
+
+.warranty-scheme h3 {
+    color: #333;
+}
+section {
+    padding: 20px;
+    background: #fff;
+    margin: 20px auto;
+    max-width: 800px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+h1 {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.car-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+.car-item {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+.car-item {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+}
+img{
+    /* object-fit: cover; */
+    transition: 1s ease;
+}
+img:hover{
+    transform: scale(1.4);
+}
+.car-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+.car-item:hover {
+    background: #fcfdff;
+}
+
+.car-item a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.car-item a:hover {
+    background: #0056b3;
+    
+}
+footer {
+    background-color: #2C3E50; /* Dark background for contrast */
+    color: white;
+    padding: 40px 20px; /* More padding for a spacious look */
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px; /* Wider container for larger screens */
+    margin: 0 auto; /* Center the footer content */
+}
+
+.footer-links, .footer-contact, .footer-social {
+    margin: 20px 0;
+}
+
+.footer-links h4, .footer-contact h4, .footer-social h4 {
+    font-size: 1.5em; /* Larger font size for headings */
+    margin-bottom: 10px;
+    border-bottom: 2px solid #E74C3C; /* Decorative underline */
+    padding-bottom: 5px;
+}
+
+.footer-links ul, .footer-social ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-links a, .footer-social a {
+    color: #E74C3C; /* Bright color for links */
+    text-decoration: none;
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.footer-links a:hover, .footer-social a:hover {
+    color: #ECF0F1; /* Change color on hover */
+    text-decoration: underline; /* Underline on hover */
+}
+
+.footer-contact p {
+    margin: 5px 0; /* Spacing for contact info */
+}
+
+.footer-contact a {
+    color: #E74C3C; /* Bright color for email link */
+}
+
+.footer-contact a:hover {
+    color: #ECF0F1; /* Change email color on hover */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .footer-content {
+        padding: 20px; /* Less padding on small screens */
+    }
+
+    .footer-links h4, .footer-contact h4, .footer-social h4 {
+        font-size: 1.2em; /* Smaller headings for mobile */
+    }
+}
+.footer-social ul {
+    display: flex; /* Use flexbox for horizontal layout */
+    justify-content: center; /* Center the icons */
+    list-style-type: none; /* Remove default list style */
+    padding: 0;
+}
+
+.footer-social ul li {
+    margin: 0 15px; /* Space between icons */
+}
+
+.footer-social a {
+    color: #E74C3C; /* Icon color */
+    text-decoration: none; /* Remove underline */
+    font-size: 1.2em; /* Adjust font size for visibility */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.footer-social a:hover {
+    color: #ECF0F1; /* Change color on hover */
+}
+
+.footer-social i {
+    margin-right: 5px; /* Space between icon and text */
+}
